@@ -1,0 +1,467 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Feb 11 12:00:36 2026
+# Process ID: 11308
+# Current directory: C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.runs/synth_1
+# Command line: vivado.exe -log snake_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source snake_wrapper.tcl
+# Log file: C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.runs/synth_1/snake_wrapper.vds
+# Journal file: C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source snake_wrapper.tcl -notrace
+Command: synth_design -top snake_wrapper -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 14164
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1029.082 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'snake_wrapper' [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/snake_wrapper.v:4]
+INFO: [Synth 8-6157] synthesizing module 'Master_state_machine' [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Master_state_machine.v:4]
+	Parameter START bound to: 2'b00 
+	Parameter PLAY bound to: 2'b01 
+	Parameter WINNER bound to: 2'b10 
+	Parameter LOSER bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'Master_state_machine' (1#1) [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Master_state_machine.v:4]
+INFO: [Synth 8-6157] synthesizing module 'Navigation_state_machine' [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Navigation_state_machine.v:4]
+	Parameter UP bound to: 2'b00 
+	Parameter LEFT bound to: 2'b01 
+	Parameter RIGHT bound to: 2'b10 
+	Parameter DOWN bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'Navigation_state_machine' (2#1) [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Navigation_state_machine.v:4]
+INFO: [Synth 8-6157] synthesizing module 'random_num_gen' [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/random_num_gen.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'random_num_gen' (3#1) [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/random_num_gen.v:4]
+INFO: [Synth 8-6157] synthesizing module 'Score_counter' [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Score_counter.v:4]
+	Parameter timer bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Multiplexer_4way' [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Multiplexer_4way.v:4]
+INFO: [Synth 8-226] default block is never used [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Multiplexer_4way.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'Multiplexer_4way' (4#1) [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Multiplexer_4way.v:4]
+INFO: [Synth 8-6157] synthesizing module 'Generic_counter' [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Generic_counter.v:5]
+	Parameter COUNTER_WIDTH bound to: 17 - type: integer 
+	Parameter COUNTER_MAX bound to: 99999 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Generic_counter' (5#1) [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Generic_counter.v:5]
+INFO: [Synth 8-6157] synthesizing module 'Generic_counter__parameterized0' [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Generic_counter.v:5]
+	Parameter COUNTER_WIDTH bound to: 2 - type: integer 
+	Parameter COUNTER_MAX bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Generic_counter__parameterized0' (5#1) [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Generic_counter.v:5]
+WARNING: [Synth 8-7071] port 'TRIG_OUT' of module 'Generic_counter' is unconnected for instance 'StrobeCounter' [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Score_counter.v:66]
+WARNING: [Synth 8-7023] instance 'StrobeCounter' of module 'Generic_counter' has 5 connections declared, but only 4 given [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Score_counter.v:66]
+INFO: [Synth 8-6157] synthesizing module 'Generic_counter__parameterized1' [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Generic_counter.v:5]
+	Parameter COUNTER_WIDTH bound to: 2 - type: integer 
+	Parameter COUNTER_MAX bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Generic_counter__parameterized1' (5#1) [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Generic_counter.v:5]
+WARNING: [Synth 8-7071] port 'COUNT' of module 'Generic_counter' is unconnected for instance 'HalfCounter' [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Score_counter.v:72]
+WARNING: [Synth 8-7023] instance 'HalfCounter' of module 'Generic_counter' has 5 connections declared, but only 4 given [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Score_counter.v:72]
+INFO: [Synth 8-6157] synthesizing module 'Generic_counter__parameterized2' [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Generic_counter.v:5]
+	Parameter COUNTER_WIDTH bound to: 4 - type: integer 
+	Parameter COUNTER_MAX bound to: 9 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Generic_counter__parameterized2' (5#1) [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Generic_counter.v:5]
+INFO: [Synth 8-6157] synthesizing module 'Generic_counter__parameterized3' [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Generic_counter.v:5]
+	Parameter COUNTER_WIDTH bound to: 4 - type: integer 
+	Parameter COUNTER_MAX bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Generic_counter__parameterized3' (5#1) [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Generic_counter.v:5]
+WARNING: [Synth 8-7071] port 'TRIG_OUT' of module 'Generic_counter' is unconnected for instance 'FirstDecimal' [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Score_counter.v:87]
+WARNING: [Synth 8-7023] instance 'FirstDecimal' of module 'Generic_counter' has 5 connections declared, but only 4 given [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Score_counter.v:87]
+INFO: [Synth 8-6157] synthesizing module 'decode_world' [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/decode_world.v:4]
+INFO: [Synth 8-226] default block is never used [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/decode_world.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'decode_world' (6#1) [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/decode_world.v:4]
+INFO: [Synth 8-6157] synthesizing module 'Generic_counter__parameterized4' [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Generic_counter.v:5]
+	Parameter COUNTER_WIDTH bound to: 28 - type: integer 
+	Parameter COUNTER_MAX bound to: 99999999 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Generic_counter__parameterized4' (6#1) [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Generic_counter.v:5]
+WARNING: [Synth 8-7071] port 'COUNT' of module 'Generic_counter' is unconnected for instance 'OneSecond' [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Score_counter.v:111]
+WARNING: [Synth 8-7023] instance 'OneSecond' of module 'Generic_counter' has 5 connections declared, but only 4 given [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Score_counter.v:111]
+WARNING: [Synth 8-7071] port 'TRIG_OUT' of module 'Generic_counter' is unconnected for instance 'DecSeconds' [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Score_counter.v:125]
+WARNING: [Synth 8-7023] instance 'DecSeconds' of module 'Generic_counter' has 5 connections declared, but only 4 given [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Score_counter.v:125]
+INFO: [Synth 8-6155] done synthesizing module 'Score_counter' (7#1) [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Score_counter.v:4]
+INFO: [Synth 8-6157] synthesizing module 'VGA_module' [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/VGA_module.v:4]
+	Parameter VertTimeToPulseWidthEnd bound to: 10'b0000000010 
+	Parameter VertTimeToBackPorchEnd bound to: 10'b0000011111 
+	Parameter VertTimeToDisplayTimeEnd bound to: 10'b0111111111 
+	Parameter HorzTimeToPulseWidthEnd bound to: 10'b0001100000 
+	Parameter HorzTimeToBackPorchEnd bound to: 10'b0010010000 
+	Parameter HorzTimeToDisplayTimeEnd bound to: 10'b1100010000 
+WARNING: [Synth 8-7071] port 'COUNT' of module 'Generic_counter' is unconnected for instance 'FreqCounter' [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/VGA_module.v:26]
+WARNING: [Synth 8-7023] instance 'FreqCounter' of module 'Generic_counter' has 5 connections declared, but only 4 given [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/VGA_module.v:26]
+INFO: [Synth 8-6157] synthesizing module 'Generic_counter__parameterized5' [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Generic_counter.v:5]
+	Parameter COUNTER_WIDTH bound to: 10 - type: integer 
+	Parameter COUNTER_MAX bound to: 799 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Generic_counter__parameterized5' (7#1) [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Generic_counter.v:5]
+INFO: [Synth 8-6157] synthesizing module 'Generic_counter__parameterized6' [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Generic_counter.v:5]
+	Parameter COUNTER_WIDTH bound to: 10 - type: integer 
+	Parameter COUNTER_MAX bound to: 520 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Generic_counter__parameterized6' (7#1) [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Generic_counter.v:5]
+WARNING: [Synth 8-7071] port 'TRIG_OUT' of module 'Generic_counter' is unconnected for instance 'VerticalCounter' [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/VGA_module.v:33]
+WARNING: [Synth 8-7023] instance 'VerticalCounter' of module 'Generic_counter' has 5 connections declared, but only 4 given [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/VGA_module.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_module' (8#1) [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/VGA_module.v:4]
+INFO: [Synth 8-6157] synthesizing module 'Snake_control' [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:4]
+	Parameter SnakeLength bound to: 20 - type: integer 
+	Parameter SmallSnake bound to: 2 - type: integer 
+	Parameter MaxX bound to: 159 - type: integer 
+	Parameter MaxY bound to: 119 - type: integer 
+	Parameter RED bound to: 12'b000000001111 
+	Parameter BLUE bound to: 12'b111100000000 
+	Parameter YELLOW bound to: 12'b000011111111 
+	Parameter BLACK bound to: 12'b000000000000 
+INFO: [Synth 8-6157] synthesizing module 'Generic_counter__parameterized7' [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Generic_counter.v:5]
+	Parameter COUNTER_WIDTH bound to: 23 - type: integer 
+	Parameter COUNTER_MAX bound to: 3999999 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Generic_counter__parameterized7' (8#1) [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Generic_counter.v:5]
+WARNING: [Synth 8-7071] port 'COUNT' of module 'Generic_counter' is unconnected for instance 'FreqCounter' [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:52]
+WARNING: [Synth 8-7023] instance 'FreqCounter' of module 'Generic_counter' has 5 connections declared, but only 4 given [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:52]
+INFO: [Synth 8-6157] synthesizing module 'Generic_counter__parameterized8' [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Generic_counter.v:5]
+	Parameter COUNTER_WIDTH bound to: 23 - type: integer 
+	Parameter COUNTER_MAX bound to: 2999999 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Generic_counter__parameterized8' (8#1) [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Generic_counter.v:5]
+WARNING: [Synth 8-7071] port 'COUNT' of module 'Generic_counter' is unconnected for instance 'ColourFreqCounter' [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:56]
+WARNING: [Synth 8-7023] instance 'ColourFreqCounter' of module 'Generic_counter' has 5 connections declared, but only 4 given [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:56]
+INFO: [Synth 8-6157] synthesizing module 'Generic_counter__parameterized9' [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Generic_counter.v:5]
+	Parameter COUNTER_WIDTH bound to: 12 - type: integer 
+	Parameter COUNTER_MAX bound to: 4094 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Generic_counter__parameterized9' (8#1) [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Generic_counter.v:5]
+WARNING: [Synth 8-7071] port 'TRIG_OUT' of module 'Generic_counter' is unconnected for instance 'ColCounter' [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:59]
+WARNING: [Synth 8-7023] instance 'ColCounter' of module 'Generic_counter' has 5 connections declared, but only 4 given [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:59]
+WARNING: [Synth 8-324] index 20 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:101]
+WARNING: [Synth 8-324] index 20 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:101]
+WARNING: [Synth 8-324] index 20 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:101]
+WARNING: [Synth 8-324] index 20 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:101]
+WARNING: [Synth 8-324] index 21 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:101]
+WARNING: [Synth 8-324] index 21 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:101]
+WARNING: [Synth 8-324] index 21 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:101]
+WARNING: [Synth 8-324] index 21 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:101]
+WARNING: [Synth 8-324] index 22 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:101]
+WARNING: [Synth 8-324] index 22 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:101]
+WARNING: [Synth 8-324] index 22 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:101]
+WARNING: [Synth 8-324] index 22 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:101]
+WARNING: [Synth 8-324] index 23 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:101]
+WARNING: [Synth 8-324] index 23 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:101]
+WARNING: [Synth 8-324] index 23 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:101]
+WARNING: [Synth 8-324] index 23 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:101]
+WARNING: [Synth 8-324] index 24 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:101]
+WARNING: [Synth 8-324] index 24 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:101]
+WARNING: [Synth 8-324] index 24 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:101]
+WARNING: [Synth 8-324] index 24 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:101]
+WARNING: [Synth 8-324] index 25 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:101]
+WARNING: [Synth 8-324] index 25 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:101]
+WARNING: [Synth 8-324] index 25 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:101]
+WARNING: [Synth 8-324] index 25 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:101]
+WARNING: [Synth 8-324] index 26 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:101]
+WARNING: [Synth 8-324] index 26 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:101]
+WARNING: [Synth 8-324] index 26 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:101]
+WARNING: [Synth 8-324] index 26 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:101]
+WARNING: [Synth 8-324] index 27 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:101]
+WARNING: [Synth 8-324] index 27 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:101]
+WARNING: [Synth 8-324] index 27 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:101]
+WARNING: [Synth 8-324] index 27 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:101]
+WARNING: [Synth 8-324] index 28 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:101]
+WARNING: [Synth 8-324] index 28 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:101]
+WARNING: [Synth 8-324] index 28 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:101]
+WARNING: [Synth 8-324] index 28 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:101]
+WARNING: [Synth 8-324] index 29 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:101]
+WARNING: [Synth 8-324] index 29 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:101]
+WARNING: [Synth 8-324] index 29 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:101]
+WARNING: [Synth 8-324] index 29 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:101]
+WARNING: [Synth 8-324] index 30 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:101]
+WARNING: [Synth 8-324] index 30 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:101]
+WARNING: [Synth 8-324] index 30 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:101]
+WARNING: [Synth 8-324] index 30 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:101]
+WARNING: [Synth 8-324] index 20 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:117]
+WARNING: [Synth 8-324] index 20 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:117]
+WARNING: [Synth 8-324] index 20 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:117]
+WARNING: [Synth 8-324] index 20 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:117]
+WARNING: [Synth 8-324] index 21 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:117]
+WARNING: [Synth 8-324] index 21 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:117]
+WARNING: [Synth 8-324] index 21 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:117]
+WARNING: [Synth 8-324] index 21 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:117]
+WARNING: [Synth 8-324] index 22 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:117]
+WARNING: [Synth 8-324] index 22 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:117]
+WARNING: [Synth 8-324] index 22 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:117]
+WARNING: [Synth 8-324] index 22 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:117]
+WARNING: [Synth 8-324] index 23 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:117]
+WARNING: [Synth 8-324] index 23 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:117]
+WARNING: [Synth 8-324] index 23 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:117]
+WARNING: [Synth 8-324] index 23 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:117]
+WARNING: [Synth 8-324] index 24 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:117]
+WARNING: [Synth 8-324] index 24 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:117]
+WARNING: [Synth 8-324] index 24 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:117]
+WARNING: [Synth 8-324] index 24 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:117]
+WARNING: [Synth 8-324] index 25 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:117]
+WARNING: [Synth 8-324] index 25 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:117]
+WARNING: [Synth 8-324] index 25 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:117]
+WARNING: [Synth 8-324] index 25 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:117]
+WARNING: [Synth 8-324] index 26 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:117]
+WARNING: [Synth 8-324] index 26 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:117]
+WARNING: [Synth 8-324] index 26 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:117]
+WARNING: [Synth 8-324] index 26 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:117]
+WARNING: [Synth 8-324] index 27 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:117]
+WARNING: [Synth 8-324] index 27 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:117]
+WARNING: [Synth 8-324] index 27 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:117]
+WARNING: [Synth 8-324] index 27 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:117]
+WARNING: [Synth 8-324] index 28 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:117]
+WARNING: [Synth 8-324] index 28 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:117]
+WARNING: [Synth 8-324] index 28 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:117]
+WARNING: [Synth 8-324] index 28 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:117]
+WARNING: [Synth 8-324] index 29 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:117]
+WARNING: [Synth 8-324] index 29 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:117]
+WARNING: [Synth 8-324] index 29 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:117]
+WARNING: [Synth 8-324] index 29 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:117]
+WARNING: [Synth 8-324] index 30 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:117]
+WARNING: [Synth 8-324] index 30 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:117]
+WARNING: [Synth 8-324] index 30 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:117]
+WARNING: [Synth 8-324] index 30 out of range [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:117]
+INFO: [Synth 8-6155] done synthesizing module 'Snake_control' (9#1) [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/Snake_control.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'snake_wrapper' (10#1) [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/sources_1/new/snake_wrapper.v:4]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1029.082 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1029.082 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1029.082 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1029.082 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/constrs_1/new/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/snake_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/snake_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1041.797 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1041.797 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1041.797 ; gain = 12.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1041.797 ; gain = 12.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1041.797 ; gain = 12.715
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'Curr_state_reg' in module 'Master_state_machine'
+INFO: [Synth 8-802] inferred FSM for state register 'Curr_state_reg' in module 'Navigation_state_machine'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   START |                               00 |                               00
+                    PLAY |                               01 |                               01
+                  WINNER |                               10 |                               10
+                   LOSER |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'Curr_state_reg' using encoding 'sequential' in module 'Master_state_machine'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      UP |                               00 |                               00
+                   RIGHT |                               01 |                               10
+                    DOWN |                               10 |                               11
+                    LEFT |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'Curr_state_reg' using encoding 'sequential' in module 'Navigation_state_machine'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1041.797 ; gain = 12.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   28 Bit       Adders := 1     
+	   2 Input   23 Bit       Adders := 2     
+	   2 Input   17 Bit       Adders := 1     
+	   2 Input   12 Bit       Adders := 1     
+	   4 Input   12 Bit       Adders := 2     
+	   3 Input   12 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 3     
+	   2 Input    9 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 4     
+	   2 Input    2 Bit       Adders := 3     
++---XORs : 
+	   4 Input      1 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               28 Bit    Registers := 1     
+	               23 Bit    Registers := 2     
+	               17 Bit    Registers := 1     
+	               12 Bit    Registers := 3     
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 22    
+	                7 Bit    Registers := 22    
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 24    
++---Muxes : 
+	   2 Input   23 Bit        Muxes := 2     
+	   2 Input   17 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 47    
+	   3 Input   12 Bit        Muxes := 2     
+	   4 Input    5 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 4     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 19    
+	   4 Input    2 Bit        Muxes := 6     
+	   2 Input    1 Bit        Muxes := 50    
+	   5 Input    1 Bit        Muxes := 2     
+	   4 Input    1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1041.797 ; gain = 12.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1041.797 ; gain = 12.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1041.797 ; gain = 12.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1058.773 ; gain = 29.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1064.555 ; gain = 35.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1064.555 ; gain = 35.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1064.555 ; gain = 35.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1064.555 ; gain = 35.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1064.555 ; gain = 35.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1064.555 ; gain = 35.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    49|
+|3     |LUT1   |    21|
+|4     |LUT2   |    99|
+|5     |LUT3   |    45|
+|6     |LUT4   |    75|
+|7     |LUT5   |    99|
+|8     |LUT6   |   349|
+|9     |FDCE   |     5|
+|10    |FDRE   |   445|
+|11    |FDSE   |   110|
+|12    |IBUF   |     6|
+|13    |OBUF   |    26|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1064.555 ; gain = 35.473
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:40 . Memory (MB): peak = 1064.555 ; gain = 22.758
+Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1064.555 ; gain = 35.473
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1076.621 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 49 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1076.621 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+61 Infos, 108 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 1076.621 ; gain = 47.539
+INFO: [Common 17-1381] The checkpoint 'C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/snake_game/snake_game.runs/synth_1/snake_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file snake_wrapper_utilization_synth.rpt -pb snake_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 11 12:01:30 2026...

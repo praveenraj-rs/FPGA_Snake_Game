@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../snake_game.srcs/sources_1/new/Generic_counter.v" \
+"../../../../snake_game.srcs/sources_1/new/Master_state_machine.v" \
+"../../../../snake_game.srcs/sources_1/new/Multiplexer_4way.v" \
+"../../../../snake_game.srcs/sources_1/new/Navigation_state_machine.v" \
+"../../../../snake_game.srcs/sources_1/new/Score_counter.v" \
+"../../../../snake_game.srcs/sources_1/new/Snake_control.v" \
+"../../../../snake_game.srcs/sources_1/new/VGA_module.v" \
+"../../../../snake_game.srcs/sources_1/new/decode_world.v" \
+"../../../../snake_game.srcs/sources_1/new/random_num_gen.v" \
+"../../../../snake_game.srcs/sources_1/new/snake_wrapper.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

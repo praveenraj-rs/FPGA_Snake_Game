@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Feb 17 09:28:57 2026
+# Process ID: 10624
+# Current directory: C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/Test_VGA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11468 C:\Users\prave\Desktop\FPGA_Baysys3_Snake_Game\Firmwares\Test_VGA\Test_VGA.xpr
+# Log file: C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/Test_VGA/vivado.log
+# Journal file: C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/Test_VGA\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/Test_VGA/Test_VGA.xpr
+update_compile_order -fileset sources_1
