@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/Test_Buzzer/Test_Buzzer.runs/impl_1'
+HD_PWD='C:/Users/prave/Desktop/FPGA_Snake_Game/Firmwares/Test_Buzzer/Test_Buzzer.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

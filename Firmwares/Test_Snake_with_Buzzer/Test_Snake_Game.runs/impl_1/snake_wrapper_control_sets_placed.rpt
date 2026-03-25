@@ -1,0 +1,106 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Tue Mar 24 19:54:16 2026
+| Host         : praveenraj_rs running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file snake_wrapper_control_sets_placed.rpt
+| Design       : snake_wrapper
+| Device       : xc7a35t
+------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    28 |
+|    Minimum number of control sets                        |    28 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    83 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    28 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     7 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     3 |
+| >= 10 to < 12      |     3 |
+| >= 12 to < 14      |     3 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    10 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              20 |           14 |
+| No           | No                    | Yes                    |              97 |           28 |
+| No           | Yes                   | No                     |             135 |           44 |
+| Yes          | No                    | No                     |              41 |           10 |
+| Yes          | No                    | Yes                    |              33 |            9 |
+| Yes          | Yes                   | No                     |             359 |          104 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------+-------------------------------------------+------------------------------------------------------+------------------+----------------+--------------+
+|              Clock Signal              |               Enable Signal               |                   Set/Reset Signal                   | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------------------------------+-------------------------------------------+------------------------------------------------------+------------------+----------------+--------------+
+|  CLK_IBUF_BUFG                         | Score/SecDecimal/E[0]                     | Master/SOFT_RESET                                    |                1 |              4 |         4.00 |
+|  CLK_IBUF_BUFG                         | Score/Seconds/E[0]                        | Master/SOFT_RESET                                    |                1 |              4 |         4.00 |
+|  CLK_IBUF_BUFG                         | Score/OneSecond/E[0]                      | Master/SOFT_RESET                                    |                1 |              4 |         4.00 |
+|  CLK_IBUF_BUFG                         | Buzzer/sw_inst/state[3]_i_1__0_n_0        | RESET_IBUF                                           |                3 |              4 |         1.33 |
+|  CLK_IBUF_BUFG                         | Control/E[0]                              | Master/SOFT_RESET                                    |                1 |              4 |         4.00 |
+|  CLK_IBUF_BUFG                         | Buzzer/mario_inst/sel                     | RESET_IBUF                                           |                1 |              5 |         5.00 |
+|  CLK_IBUF_BUFG                         | Control/SnakeVar[4]_i_1_n_0               |                                                      |                2 |              5 |         2.50 |
+|  CLK_IBUF_BUFG                         | Control/FreqCounter/Trigger_out_reg_0[0]  | Master/SOFT_RESET                                    |                2 |              7 |         3.50 |
+|  CLK_IBUF_BUFG                         | Control/TARGET_REACHED                    | Target/TARGET_ADDR_V[6]_i_1_n_0                      |                2 |              7 |         3.50 |
+|  CLK_IBUF_BUFG                         | Control/FreqCounter/Trigger_out_reg_1[0]  | Master/SOFT_RESET                                    |                2 |              8 |         4.00 |
+|  CLK_IBUF_BUFG                         | Control/TARGET_REACHED                    | Target/TARGET_ADDR_H[7]_i_1_n_0                      |                1 |              8 |         8.00 |
+|  CLK_IBUF_BUFG                         |                                           | VGA/VerticalCounter/SR[0]                            |                3 |              9 |         3.00 |
+|  CLK_IBUF_BUFG                         |                                           | VGA/HorizCounter/SR[0]                               |                3 |             10 |         3.33 |
+|  CLK_IBUF_BUFG                         | VGA/FreqCounter/TRIG_1                    |                                                      |                2 |             10 |         5.00 |
+|  CLK_IBUF_BUFG                         | VGA/HorizCounter/HorTriggOut              |                                                      |                2 |             10 |         5.00 |
+|  Control/ColourFreqCounter/Trigger_out |                                           | Control/ColCounter/count_value[11]_i_1_n_0           |                4 |             12 |         3.00 |
+|  CLK_IBUF_BUFG                         |                                           | Master/SR[0]                                         |                6 |             12 |         2.00 |
+|  CLK_IBUF_BUFG                         |                                           | VGA/HorizCounter/count_value_reg[9]_0                |                5 |             12 |         2.40 |
+|  CLK_IBUF_BUFG                         |                                           | Score/DispRefresh/count_value[16]_i_1_n_0            |                4 |             16 |         4.00 |
+|  CLK_IBUF_BUFG                         | VGA/FrameCount0                           |                                                      |                4 |             16 |         4.00 |
+|  CLK_IBUF_BUFG                         |                                           |                                                      |               14 |             20 |         1.43 |
+|  CLK_IBUF_BUFG                         |                                           | Master/SOFT_RESET                                    |                8 |             22 |         2.75 |
+|  CLK_IBUF_BUFG                         |                                           | Control/FreqCounter/count_value[22]_i_1_n_0          |                6 |             22 |         3.67 |
+|  CLK_IBUF_BUFG                         |                                           | Control/ColourFreqCounter/count_value[22]_i_1__0_n_0 |                6 |             22 |         3.67 |
+|  CLK_IBUF_BUFG                         | Buzzer/beep_inst/beep_counter[23]_i_1_n_0 | RESET_IBUF                                           |                5 |             24 |         4.80 |
+|  CLK_IBUF_BUFG                         | Master/E[0]                               | Master/SOFT_RESET                                    |                9 |             28 |         3.11 |
+|  CLK_IBUF_BUFG                         |                                           | RESET_IBUF                                           |               27 |             95 |         3.52 |
+|  CLK_IBUF_BUFG                         | Control/FreqCounter/E[0]                  | Master/SOFT_RESET                                    |               84 |            285 |         3.39 |
++----------------------------------------+-------------------------------------------+------------------------------------------------------+------------------+----------------+--------------+
+
+

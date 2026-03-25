@@ -8,20 +8,20 @@ module top (
     wire [6:0] volume;
 
     // Melody generator
-//    melody_starwars melody (
-//        .clk(clk),
-//        .rst(rst),
-//        .freq(freq),
-//        .volume(volume)
-//    );
-    
-    // Melody generator
-    melody_mario melody (
+    melody_starwars melody (
         .clk(clk),
         .rst(rst),
         .freq(freq),
         .volume(volume)
     );
+    
+    // Melody generator
+//    melody_mario melody (
+//        .clk(clk),
+//        .rst(rst),
+//        .freq(freq),
+//        .volume(volume)
+//    );
 
     // PWM generator
     pwm_variable pwm (

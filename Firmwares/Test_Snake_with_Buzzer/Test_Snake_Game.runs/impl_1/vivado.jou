@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Mar 25 07:02:15 2026
+# Process ID: 5064
+# Current directory: C:/Users/prave/Desktop/FPGA_Snake_Game/Firmwares/Test_Snake_with_Buzzer/Test_Snake_Game.runs/impl_1
+# Command line: vivado.exe -log snake_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source snake_wrapper.tcl -notrace
+# Log file: C:/Users/prave/Desktop/FPGA_Snake_Game/Firmwares/Test_Snake_with_Buzzer/Test_Snake_Game.runs/impl_1/snake_wrapper.vdi
+# Journal file: C:/Users/prave/Desktop/FPGA_Snake_Game/Firmwares/Test_Snake_with_Buzzer/Test_Snake_Game.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source snake_wrapper.tcl -notrace

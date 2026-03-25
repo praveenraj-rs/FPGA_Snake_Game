@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1774362156">
+  <File Type="PA-TCL" Name="snake_wrapper.tcl"/>
+  <File Type="REPORTS-TCL" Name="snake_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="snake_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="snake_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="snake_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="snake_wrapper.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Archive/Generic_counter.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Archive/Generic_counter.v"/>
+        <Attr Name="ImportTime" Val="1770761441"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Archive/Master_state_machine.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Archive/Master_state_machine.v"/>
+        <Attr Name="ImportTime" Val="1770761691"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Archive/Multiplexer_4way.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Archive/Multiplexer_4way.v"/>
+        <Attr Name="ImportTime" Val="1770761656"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Archive/Navigation_state_machine.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Archive/Navigation_state_machine.v"/>
+        <Attr Name="ImportTime" Val="1770761717"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Archive/Score_counter.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Archive/Score_counter.v"/>
+        <Attr Name="ImportTime" Val="1770761750"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Archive/Snake_control.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Archive/Snake_control.v"/>
+        <Attr Name="ImportTime" Val="1770761787"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Archive/VGA_module.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Archive/VGA_module.v"/>
+        <Attr Name="ImportTime" Val="1770761864"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/apple_beep.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/buzzer_controller.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Archive/decode_world.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Archive/decode_world.v"/>
+        <Attr Name="ImportTime" Val="1770761887"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/melody_mario.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/melody_starwars.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/pwm_variable.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Archive/random_num_gen.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Archive/random_num_gen.v"/>
+        <Attr Name="ImportTime" Val="1770761907"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Archive/snake_wrapper.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Archive/snake_wrapper.v"/>
+        <Attr Name="ImportTime" Val="1770761811"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="snake_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/constraints.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

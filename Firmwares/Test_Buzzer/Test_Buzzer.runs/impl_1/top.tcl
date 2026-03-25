@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/Test_Buzzer/Test_Buzzer.runs/impl_1/top.tcl"
+  variable script "C:/Users/prave/Desktop/FPGA_Snake_Game/Firmwares/Test_Buzzer/Test_Buzzer.runs/impl_1/top.tcl"
   variable category "vivado_impl"
 }
 
@@ -123,8 +123,9 @@ set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
   set_param chipscope.maxJobs 2
+  set_param xicom.use_bs_reader 1
   open_checkpoint top_routed.dcp
-  set_property webtalk.parent_dir C:/Users/prave/Desktop/FPGA_Baysys3_Snake_Game/Firmwares/Test_Buzzer/Test_Buzzer.cache/wt [current_project]
+  set_property webtalk.parent_dir C:/Users/prave/Desktop/FPGA_Snake_Game/Firmwares/Test_Buzzer/Test_Buzzer.cache/wt [current_project]
 set_property TOP top [current_fileset]
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }
